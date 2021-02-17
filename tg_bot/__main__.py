@@ -26,7 +26,7 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 
 PM_START_TEXT = """
-**Hello {}, My Name is {}!** 
+**Hello {}, My Name is {kaguya}!** 
 I am an **SUPERB**  group management bot.
 You can find the list of available commands with /help.
 
@@ -49,7 +49,7 @@ Hello! my name *{}*.
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-TECHNO_IMG = "https://telegra.ph/file/84b2017bc2f3c90f2e61c.jpg"
+TECHNO_IMG = "https://telegra.ph/file/0997b2ebd325fed7f2287.jpg"
 IMPORTED = {}
 MIGRATEABLE = []
 HELPABLE = {}
@@ -252,8 +252,8 @@ def get_help(bot: Bot, update: Update):
         update.effective_message.reply_text("Contact me in Direct Message to get the help.",
                                             reply_markup=InlineKeyboardMarkup(
                                                 [[InlineKeyboardButton(text="HELP",
-                                                                       url="t.me/{}?start=help".format(
-                                                                           bot.username))]]))
+                                                                       url="t.me/{https://t.me/joinchat/UPi5LjDGdD92AWIB}?start=help".format(
+                                                                           bot @kaguya_shinomiyav_bot.))]]))
         return
 
     elif len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):
